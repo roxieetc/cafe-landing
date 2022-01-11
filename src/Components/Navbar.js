@@ -4,11 +4,35 @@ function Navbar() {
 
     return (
         <div>
-            <nav class="navbar navbar-light bg-none">
-                <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1 text-white">Essence Cafe</span>
-                 </div>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-none">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Essence Cafe</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
         </div>
     )
 }
